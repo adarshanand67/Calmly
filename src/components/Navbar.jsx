@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import favicon from "../assets/favicon.png";
 const Navbar = () => {
-  const headersData = ["Home", "About", "Contact", "Services", "Meditation", "Chakras"];
+  const headersData = ["Home", "About", "Services", "Meditation", "Chakras"];
   const nestedData = ["Dashboard", "Profile", "Settings", "Logout"];
   return (
     <div className="navbar bg-base-100">
@@ -10,7 +10,7 @@ const Navbar = () => {
         <img src={favicon} alt="logo" className="logo" width={50} />
         <a
           className="btn-ghost btn text-xl normal-case"
-          href="#"
+          href="/Home"
         >
           Calmly
         </a>
@@ -19,7 +19,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           {headersData.map((item) => {
             return (
-              <li key={item}>
+              <li key={item} className="m-0 p-0">
                 <a href={`${item}`}>{item}</a>
                 {/* <Link to={`/${item}`}>{item}</Link> */}
               </li>
