@@ -3,9 +3,10 @@ import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Alert from "./components/Alert";
 import About from "./pages/About";
+import Chakras from "./pages/Chakras";
+import Donate from "./pages/Donate";
 import Home from "./pages/Home";
 import Meditation from "./pages/Meditation";
-import Chakras from "./pages/Chakras";
 import Yoga from "./pages/Yoga";
 const Routing = () => (
   <Routes>
@@ -14,6 +15,7 @@ const Routing = () => (
     <Route path="/About" element={<About />} />
     <Route path="/Chakras" element={<Chakras />} />
     <Route path="/Yoga" element={<Yoga />} />
+    <Route path="/Donate" element={<Donate />} />
     <Route path="/" element={<Home />} />
   </Routes>
 );
