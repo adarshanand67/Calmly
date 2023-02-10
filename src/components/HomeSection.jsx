@@ -10,13 +10,12 @@ const HomeSection = (props) => {
       <div>
         <Lottie animationData={animationData} />
       </div>
-      <div className="mx-auto w-2/3">
-        <h2 className="my-2 text-center text-5xl font-bold text-black">
-          {title}
+      <div className="mx-auto w-2/3 flex flex-col justify-center">
+        <h2 className="my-2 inline text-5xl font-bold text-black">
+          {title} {" "}
         </h2>
         <span className="text-xl text-slate-500">{description}</span>
-        <br />
-        <div className="my-5 text-center">
+        <div className="mt-5 text-center">
           <Link to={link}>
             <button class="rounded bg-blue-500 p-5 font-bold text-white hover:bg-blue-700">
               {buttonText}

@@ -5,7 +5,7 @@ import favicon from "../../public/assets/favicon.png";
 const Navbar = () => {
   const headersData = ["Home", "Meditation", "Chakras", "Yoga", "About"];
   return (
-    <nav className="flex items-center justify-between bg-base-100 p-6">
+    <nav className="flex items-center justify-between p-2">
       <div className="flex items-center">
         <a className="btn-ghost btn m-0 text-xl normal-case" href="/Home">
           <img src={favicon} alt="logo" className="w-16" />
@@ -29,12 +29,10 @@ const Navbar = () => {
           {headersData.map((item) => {
             return (
               <li key={item} className="m-0 p-0 font-semibold">
-                {/* <Link to={`/${item}`} className="px-4 text-xl">
+                <Link to={`/${item}`}>{item}</Link>
+                {/* <a href={`/${item}`} className="px-4 text-xl">
                   {item}
-                </Link> */}
-                <a href={`/${item}`} className="px-4 text-xl">
-                  {item}
-                </a>
+                </a> */}
               </li>
             );
           })}

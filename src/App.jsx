@@ -11,11 +11,11 @@ function App() {
 
   return (
     <>
-      <Navbar />
       <BrowserRouter>
+        <Navbar />
         <Routing />
       </BrowserRouter>
-      <Footers/>
+      <Footers />
     </>
   );
 }

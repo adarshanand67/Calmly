@@ -17,14 +17,12 @@ const Meditation = () => {
           <div className="mx-auto w-1/2">
             <CountDownTimer />
           </div>
-          <div className="absolute right-0 z-10">
-            {/* <Lottie
-              animationData={timerback}
-              style={{
-                height: 500,
-              }}
-            /> */}
-          </div>
+          <Lottie
+            animationData={timerback}
+            style={{
+              height: 400,
+            }}
+          />
         </div>
         {/* Right side */}
         <div className="m-5 p-10">

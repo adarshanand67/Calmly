@@ -52,6 +52,7 @@ const Home = () => {
         link="/Yoga"
         buttonText="Learn about Yoga"
       />
+
     </>
   );
 };
