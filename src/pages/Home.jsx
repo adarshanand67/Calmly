@@ -16,12 +16,12 @@ const Home = () => {
       <div className="grid sm:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-center">
-            <p className="text-2xl">
-              The All in One App for your <br />{" "}
-              <span className="text-blue-500">Meditation</span> and{" "}
-              <span className="text-blue-500">Yoga</span> needs
-            </p>
             <img src={title} alt="title" className="w-1/2" />
+            <p className="m-5 text-4xl text-center">
+              The All in One App for your <br />{" "}
+              <span className="text-blue-500">Mental Health </span>
+              needs <br />
+            </p>
           </div>
         </div>
         <div className="my-5 flex flex-col items-center justify-center ">
@@ -52,7 +52,6 @@ const Home = () => {
         link="/Yoga"
         buttonText="Learn about Yoga"
       />
-
     </>
   );
 };

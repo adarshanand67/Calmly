@@ -4,6 +4,7 @@ import "./App.css";
 import BMICalculator from "./components/BMICalculator";
 import Footers from "./components/Footers";
 import Navbar from "./components/Navbar";
+import { default as NavigationBar } from "./components/NavigationBar";
 import Routing from "./routes";
 
 function App() {
@@ -12,7 +13,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <NavigationBar />
         <Routing />
       </BrowserRouter>
       <Footers />

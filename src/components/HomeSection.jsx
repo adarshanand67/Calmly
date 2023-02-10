@@ -17,7 +17,7 @@ const HomeSection = (props) => {
         <span className="text-xl text-slate-500">{description}</span>
         <div className="mt-5 text-center">
           <Link to={link}>
-            <button class="rounded bg-blue-500 p-5 font-bold text-white hover:bg-blue-700">
+            <button className="rounded bg-blue-500 p-5 font-bold text-white hover:bg-blue-700">
               {buttonText}
             </button>
           </Link>
