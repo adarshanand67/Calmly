@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Sound from "react-sound";
 import intro from "../sound/intro.mp3";
 
@@ -21,14 +22,25 @@ const converted = {
   },
 };
 
+const SoundPlay = () => {
+  const [play, setPlay] = useState(true);
 
-const Sound = () => {
+  setTimeout(() => {
+    setPlay(false);
+  }, 5000);
+
   return (
-    <div className=".message">
-      <Sound url={audio} playStatus={Sound.status.PLAYING} />
-      Play a song, Set the timer and Relax!
-    </div>
+    <>
+
+      {play && (
+        <>
+          <div style={converted[".message"]}>
+            <p className="text-black w-1/2 m-0">Play a song, Set the timer and Relax!</p>
+          </div>
+        </>
+      )}
+    </>
   );
 };
 
-export default Sound;
+export default SoundPlay;

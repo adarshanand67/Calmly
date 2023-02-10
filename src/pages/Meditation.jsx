@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import timerback from "../animation/timerBack.json";
 import CountDownTimer from "../components/CountDownTimer";
+import SoundPlay from "../components/SoundPlay";
 
 const Meditation = () => {
   return (
@@ -17,6 +18,7 @@ const Meditation = () => {
           <div className="mx-auto w-1/2">
             <CountDownTimer />
           </div>
+          <SoundPlay />
           <Lottie
             animationData={timerback}
             style={{
