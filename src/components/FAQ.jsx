@@ -26,12 +26,6 @@ const FAQData = [
     description:
       "You should seek professional help for your mental health if you are experiencing symptoms that are significantly impacting your daily life, such as prolonged feelings of sadness or anxiety, thoughts of self-harm or suicide, or if you are struggling to manage stress or cope with difficult life events.",
   },
-  {
-    id: 5,
-    title: "Is therapy effective for treating mental health conditions?",
-    description:
-      "Yes, therapy can be effective for treating mental health conditions. Research has shown that therapy, along with medication and other treatments, can help individuals manage symptoms, improve their quality of life, and achieve their goals.",
-  },
 ];
 
 const FAQ = () => {
@@ -46,7 +40,7 @@ const FAQ = () => {
             <FAQCard
               title={item.title}
               description={item.description}
-              id = {item.id}
+              id={item.id}
               key={item.id}
             />
           ))}
