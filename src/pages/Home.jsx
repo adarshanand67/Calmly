@@ -10,12 +10,13 @@ import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
 import HomeSection from "../components/HomeSection";
 import Quotes from "../components/Quotes";
+import Testimonials from "../components/Testimonials";
 
 const Home = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="grid sm:grid-cols-1 lg:grid-cols-2">
+      <div className="my-5 grid sm:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-center">
             <img src={title} alt="title" className="w-1/2" />
@@ -34,9 +35,13 @@ const Home = () => {
           </Fade>
         </div>
       </div>
-
       {/* <Quotes /> */}
-
+      <h2 className="mx-auto my-5 text-center text-5xl font-bold text-black">
+        Available Healthcare Services
+      </h2>
+      <h5 className="text-center text-xl text-slate-500">
+        Find the best support for your mental wellbeing
+      </h5>
       <HomeSection
         animationData={heromedi}
         title="Meditation"
@@ -44,7 +49,6 @@ const Home = () => {
         link="/Meditation"
         buttonText="Meditate now!"
       />
-
       <HomeSection
         animationData={chakra}
         title="Chakras"
@@ -52,7 +56,6 @@ const Home = () => {
         link="/Chakras"
         buttonText="Learn about Chakra"
       />
-
       <HomeSection
         animationData={sukh}
         title="Yoga"
@@ -60,6 +63,8 @@ const Home = () => {
         link="/Yoga"
         buttonText="Learn about Yoga"
       />
+
+      <Testimonials />
     </>
   );
 };
