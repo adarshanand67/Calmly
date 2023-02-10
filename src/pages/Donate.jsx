@@ -1,11 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Donate = () => {
-  return (
-    <p>
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis ducimus temporibus corporis voluptatem magni ad aliquam ea quidem sint blanditiis, error, quibusdam eum laudantium atque modi iusto optio maiores sunt?
-    </p>
-  )
-}
+  const [donationAmount, setDonationAmount] = useState(0);
+  const [donorName, setDonorName] = useState("");
 
-export default Donate
+  const handleDonationAmount = (event) => {
+    setDonationAmount(event.target.value);
+  };
+
+  const handleDonorName = (event) => {
+    setDonorName(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(`Donation of $${donationAmount} received from ${donorName}`);
+  };
+
+  return (
+    <form onSubmit={handleSubmit}>
+      <h2>Donate to Support Mental Health Patients</h2>
+      <div>
+        <label>
+          Name:
+          <input
+            type="text"
+            value={donorName}
+            onChange={handleDonorName}
+            required
+          />
+        </label>
+      </div>
+      <div>
+        <label>
+          Donation Amount ($):
+          <input
+            type="number"
+            value={donationAmount}
+            onChange={handleDonationAmount}
+            required
+          />
+        </label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  );
+};
+
+export default Donate;

@@ -4,7 +4,7 @@ import { BrowserRouter, Link } from "react-router-dom";
 import favicon from "../../public/assets/favicon.png";
 
 const NavigationBar = () => {
-  const headersData = ["Home", "Meditation", "Chakras", "Yoga", "About", "Donate"];
+  const headersData = ["Home", "Meditation", "Chakras", "Yoga", "About"];
 
   return (
     <>

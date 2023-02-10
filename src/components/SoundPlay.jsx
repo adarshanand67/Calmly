@@ -27,7 +27,7 @@ const SoundPlay = () => {
 
   setTimeout(() => {
     setPlay(false);
-  }, 5000);
+  }, 3000);
 
   return (
     <>

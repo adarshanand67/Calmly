@@ -1,6 +1,7 @@
 import { Icon } from "@iconify/react";
 import Lottie from "lottie-react";
 import React from "react";
+import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import mockups from "../../public/assets/mockups.png";
 import title from "../../public/assets/title.png";
@@ -8,6 +9,7 @@ import chakra from "../animation/chakra.json";
 import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
 import HomeSection from "../components/HomeSection";
+import Quotes from "../components/Quotes";
 
 const Home = () => {
   return (
@@ -17,17 +19,23 @@ const Home = () => {
         <div className="flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-center">
             <img src={title} alt="title" className="w-1/2" />
-            <p className="m-5 text-4xl text-center">
-              The All in One App for your <br />{" "}
-              <span className="text-blue-500">Mental Health </span>
-              needs <br />
-            </p>
+            <Fade left>
+              <p className="m-5 text-center text-4xl">
+                The All in One App for your <br />{" "}
+                <span className="text-blue-500">Mental Health </span>
+                needs <br />
+              </p>
+            </Fade>
           </div>
         </div>
-        <div className="my-5 flex flex-col items-center justify-center ">
-          <img src={mockups} alt="mockups" className="w-1/2" />
+        <div className="mt-5 flex flex-col items-center justify-center ">
+          <Fade right>
+            <img src={mockups} alt="mockups" className="w-1/2" />
+          </Fade>
         </div>
       </div>
+
+      {/* <Quotes /> */}
 
       <HomeSection
         animationData={heromedi}
