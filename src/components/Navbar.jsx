@@ -7,9 +7,9 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between bg-base-100 p-6">
       <div className="flex items-center">
-        <img src={favicon} alt="logo" className="logo mr-6 h-10 w-10" />
-        <a className="btn-ghost btn text-xl normal-case" href="/Home">
-          Calmly
+        <a className="btn-ghost btn m-0 text-xl normal-case" href="/Home">
+          <img src={favicon} alt="logo" className="w-16" />
+          <span className="mx-2">Calmly</span>
         </a>
       </div>
       <div className="block sm:hidden">
@@ -28,7 +28,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">
           {headersData.map((item) => {
             return (
-              <li key={item} className="m-0 p-0">
+              <li key={item} className="m-0 p-0 font-semibold">
                 {/* <Link to={`/${item}`} className="px-4 text-xl">
                   {item}
                 </Link> */}
