@@ -1,33 +1,46 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import favicon from "../assets/favicon.png";
+import favicon from "../../public/assets/favicon.png";
+
 const Navbar = () => {
-  const headersData = ["Home", "About", "Services", "Meditation", "Chakras"];
-  const nestedData = ["Dashboard", "Profile", "Settings", "Logout"];
+  const headersData = ["Home", "Meditation", "Chakras", "About"];
   return (
-    <div className="navbar bg-base-100">
-      <div className="flex-1">
-        <img src={favicon} alt="logo" className="logo" width={50} />
-        <a
-          className="btn-ghost btn text-xl normal-case"
-          href="/Home"
-        >
+    <nav className="flex items-center justify-between bg-base-100 p-6">
+      <div className="flex items-center">
+        <img src={favicon} alt="logo" className="logo mr-6 h-10 w-10" />
+        <a className="btn-ghost btn text-xl normal-case" href="/Home">
           Calmly
         </a>
       </div>
-      <div className="flex-none">
+      <div className="block sm:hidden">
+        <button className="btn-toggle">
+          <svg
+            className="h-6 w-6 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div className="hidden sm:block">
         <ul className="menu menu-horizontal px-1">
           {headersData.map((item) => {
             return (
               <li key={item} className="m-0 p-0">
-                <a href={`${item}`}>{item}</a>
-                {/* <Link to={`/${item}`}>{item}</Link> */}
+                {/* <Link to={`/${item}`} className="px-4 text-xl">
+                  {item}
+                </Link> */}
+                <a href={`/${item}`} className="px-4 text-xl">
+                  {item}
+                </a>
               </li>
             );
           })}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

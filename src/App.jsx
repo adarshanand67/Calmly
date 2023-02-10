@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import reactLogo from "./assets/react.svg";
 import Footers from "./components/Footers";
 import Navbar from "./components/Navbar";
 import Routing from "./routes";

@@ -7,7 +7,7 @@ import sacral from "../animation/Sacral.json";
 import solar from "../animation/Solar.json";
 import thirdeye from "../animation/Thirdeye.json";
 import throat from "../animation/Throat.json";
-import chacha from "../assets/bg.jpg";
+import chacha from "../../public/assets/bg.jpg";
 import ChakraCard from "../components/ChakraCard";
 // import "../styles/Chakras.css";
 

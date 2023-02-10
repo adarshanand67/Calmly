@@ -4,8 +4,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import chakra from "../animation/chakra.json";
 import heromedi from "../animation/heromedi.json";
-import mockups from "../assets/mockups.png";
-import title from "../assets/title.png";
+import mockups from "../../public/assets/mockups.png";
+import title from "../../public/assets/title.png";
 
 const Home = () => {
   return (
@@ -14,7 +14,7 @@ const Home = () => {
       <div className="grid grid-cols-2">
         <div className="flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-center">
-            
+
             <img src={title} alt="title" className="w-1/2" />
           </div>
         </div>
