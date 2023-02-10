@@ -4,7 +4,7 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import reactLogo from "./assets/react.svg";
 import Navbar from "./components/Navbar";
-import Routes from "./routes";
+import Routing from "./routes";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -13,7 +13,7 @@ function App() {
     <>
       <Navbar />
       <BrowserRouter>
-        <Routes />
+        <Routing />
       </BrowserRouter>
     </>
   );
