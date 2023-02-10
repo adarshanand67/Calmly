@@ -4,7 +4,7 @@ import React from "react";
 const ChakraCard = (props) => {
   const { animationData, title, location, meaning, color, description } = props;
   return (
-    <div className="m-4 grid gap-0 sm:grid-cols-1 lg:grid-cols-2">
+    <div className="m-4 mr-10 grid gap-0 sm:grid-cols-1 lg:grid-cols-2">
       <div className="sm:text-center">
         <Lottie animationData={animationData} style={{ height: 300 }} />
       </div>

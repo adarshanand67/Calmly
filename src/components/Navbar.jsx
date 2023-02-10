@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import favicon from "../../public/assets/favicon.png";
 
 const Navbar = () => {
-  const headersData = ["Home", "Meditation", "Chakras", "About"];
+  const headersData = ["Home", "Meditation", "Chakras", "Yoga", "About"];
   return (
     <nav className="flex items-center justify-between bg-base-100 p-6">
       <div className="flex items-center">
