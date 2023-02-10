@@ -3,12 +3,13 @@ import React from "react";
 
 const TestimonialCard = (props) => {
   const { id, name, description } = props;
+  const image = `https://i.pravatar.cc/100?img=${id}`;
   return (
     <>
       <div className="mx-auto mb-6 w-full rounded-lg border border-gray-200 bg-white p-5 font-light text-gray-800">
         <div className="mb-4 flex w-full items-center">
           <div className="h-10 w-10 overflow-hidden rounded-full border border-gray-200 bg-gray-50">
-            <img src=`https://i.pravatar.cc/100?img=${id}` alt="avatar" />
+            <img src={image} alt={name} />
           </div>
           <div className="flex-grow pl-3">
             <h6 className="text-sm font-bold uppercase text-gray-600">

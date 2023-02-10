@@ -11,6 +11,7 @@ import sukh from "../animation/sukh.json";
 import HomeSection from "../components/HomeSection";
 import Quotes from "../components/Quotes";
 import Testimonials from "../components/Testimonials";
+import FAQ from "../components/FAQ";
 
 const Home = () => {
   return (
@@ -65,6 +66,7 @@ const Home = () => {
       />
 
       <Testimonials />
+      <FAQ />
     </>
   );
 };
