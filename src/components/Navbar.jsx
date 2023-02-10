@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex items-center">
         <a className="btn-ghost btn m-0 text-xl normal-case" href="/Home">
           <img src={favicon} alt="logo" className="w-16" />
-          <span className="mx-2">Calmly</span>
+          <span className="mx-2 py-2">Calmly</span>
         </a>
       </div>
       <div className="block sm:hidden">
