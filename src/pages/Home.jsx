@@ -38,7 +38,7 @@ const Home = () => {
         </div>
       </div>
       {/* <Quotes /> */}
-      <h2 className="mx-auto my-5 text-center text-5xl font-bold text-black">
+      <h2 className="w-2/3 mx-auto my-5 text-center text-5xl font-bold text-black">
         Available Healthcare Services
       </h2>
       <h5 className="text-center text-xl text-slate-500">

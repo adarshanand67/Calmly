@@ -12,7 +12,6 @@ const ChakraCard = (props) => {
         </Fade>
       </div>
       <div className="pl-5 pt-5 shadow-2xl">
-        <Fade right>
           <div className="m-2 text-3xl">
             <h1 style={{ color: color }}>{title}</h1>
           </div>
@@ -24,7 +23,6 @@ const ChakraCard = (props) => {
           </h4>
           <br />
           <p className="m-2 my-5">{description}</p>
-        </Fade>
       </div>
     </div>
   );

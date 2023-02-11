@@ -9,22 +9,23 @@ const Meditation = () => {
   return (
     <div className="flex h-screen items-center justify-center">
       {/* Divide in 2 grids */}
-      <div className="grid max-h-fit w-full max-w-7xl grid-cols-2">
+      <div className="grid max-h-fit w-full max-w-7xl sm:grid-cols-1 lg:grid-cols-2">
         {/* Left side */}
         <div className="my-5">
           <p className="text-center text-xl font-medium text-gray-700">
-            Choose your meditation time
+            {/* Choose your meditation time */}
           </p>
-          <div className="mx-auto w-1/2">
-            <CountDownTimer />
-          </div>
-          <SoundPlay />
+
           <Lottie
             animationData={timerback}
             style={{
-              height: 400,
+              height: 500,
             }}
           />
+          {/* <div className="mx-auto w-1/2">
+            <CountDownTimer />
+          </div> */}
+          <SoundPlay />
         </div>
         {/* Right side */}
         <div className="m-5 p-10">

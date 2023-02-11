@@ -15,9 +15,9 @@ const HomeSection = (props) => {
       </Fade>
       <div className="mx-auto flex w-2/3 flex-col justify-center">
         <Fade right>
-          <h2 className="my-2 inline text-5xl font-bold text-black">
+          <span className="my-2 inline text-5xl font-bold text-black">
             {title}{" "}
-          </h2>
+          </span>
           <span className="text-xl text-slate-500">{description}</span>
           <div className="mt-5 text-center">
             <Link to={link}>

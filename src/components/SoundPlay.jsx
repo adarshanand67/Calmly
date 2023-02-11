@@ -35,7 +35,7 @@ const SoundPlay = () => {
       {play && (
         <>
           <div style={converted[".message"]}>
-            <p className="text-black w-1/2 m-0">Play a song, Set the timer and Relax!</p>
+            <p className="text-black w-1/2 m-0">Play a song and Relax!</p>
           </div>
         </>
       )}
