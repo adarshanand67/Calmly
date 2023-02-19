@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Spinners = () => {
   return (
@@ -24,6 +24,6 @@ const Spinners = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Spinners
+export default Spinners;

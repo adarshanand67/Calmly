@@ -25,7 +25,7 @@ const NavigationBar = () => {
           <img src={favicon} className="mr-3 h-6 sm:h-9" alt="Calmly Logo" />
           <div
             className="self-center whitespace-nowrap text-xl font-semibold dark:text-white"
-          href="/"
+            href="/"
           >
             Calmly
           </div>

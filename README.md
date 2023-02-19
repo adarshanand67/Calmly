@@ -1,4 +1,5 @@
 ![logo (1)](public/assets/favicon.png)
+
 <h1> Calmly </h1>
 
 [![GitHub contributors](https://img.shields.io/github/contributors/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/contributors)
@@ -14,6 +15,7 @@
 Calmly is a mental health application designed to help individuals manage their mental health and well-being. The app provides tools and resources to help users maintain a healthy mindset and improve their overall well-being.
 
 ## ScreenShots
+
 ![chrome_6RTyfbMxGz](https://user-images.githubusercontent.com/73928744/218274206-7a599c70-a7af-4c31-8bd7-eaa5c5adc9d8.png)
 ![chrome_EufxHFwJfT_magic](https://user-images.githubusercontent.com/73928744/218274211-19563d5a-cb4a-4d8b-b6af-9a82b460f75e.png)
 ![chrome_Um8lbs6Ph0](https://user-images.githubusercontent.com/73928744/218274214-1c5dded2-2cd2-48fd-90c9-18aae6cac37a.png)

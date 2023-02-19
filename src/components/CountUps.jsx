@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 import CountUp from "react-countup";
 
 const CountUps = () => {
@@ -8,4 +8,4 @@ const CountUps = () => {
   const AwardWinner = 37;
 };
 
-export default CountUps
+export default CountUps;

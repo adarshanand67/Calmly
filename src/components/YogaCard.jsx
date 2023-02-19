@@ -8,7 +8,7 @@ const YogaCard = (props) => {
     <>
       <div className="m-4 mr-10 grid gap-0 sm:grid-cols-1 lg:grid-cols-2">
         <div className="sm:text-center" data-aos="fade-left">
-            <Lottie animationData={animationData} style={{ height: 300 }} />
+          <Lottie animationData={animationData} style={{ height: 300 }} />
         </div>
         <div className="pl-5 pt-5 shadow-2xl">
           <div className="m-2 text-3xl">
