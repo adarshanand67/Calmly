@@ -1,8 +1,9 @@
 import React from "react";
 import {
+  EmailIcon,
+  EmailShareButton,
   FacebookShareButton,
   LinkedinShareButton,
-  PinterestShareButton,
   RedditShareButton,
   TelegramShareButton,
   TumblrShareButton,
@@ -13,7 +14,6 @@ import {
 import {
   FacebookIcon,
   LinkedinIcon,
-  PinterestIcon,
   RedditIcon,
   TelegramIcon,
   TumblrIcon,
@@ -21,61 +21,42 @@ import {
   WhatsappIcon,
 } from "react-share";
 
-const SocialMediaButtons = ({ url }) => {
-  // const url = props.url;
-  // let HomeURL = "https://share-me-web.netlify.app/";
-
-
+const SocialMediaButtons = ({ url, title }) => {
+  // const emailID = "mailto:adarsh.anand.20031@iitgoa.ac.in"
   return (
     // Send all buttons to bottom right
     <div className="mt2 mb-5 flex items-end justify-center gap-3">
+      <EmailShareButton url={url}>
+        <EmailIcon size={48} round={true} title={title} />
+      </EmailShareButton>
+
       <FacebookShareButton url={url}>
-        <FacebookIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <FacebookIcon size={48} round={true} title={title} />
       </FacebookShareButton>
 
       <TwitterShareButton url={url}>
-        <TwitterIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <TwitterIcon size={48} round={true} title={title} />
       </TwitterShareButton>
 
       <WhatsappShareButton url={url}>
-        <WhatsappIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <WhatsappIcon size={48} round={true} title={title} />
       </WhatsappShareButton>
 
       <LinkedinShareButton url={url}>
-        <LinkedinIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <LinkedinIcon size={48} round={true} title={title} />
       </LinkedinShareButton>
 
       <RedditShareButton url={url}>
-        <RedditIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <RedditIcon size={48} round={true} title={title} />
       </RedditShareButton>
 
       <TelegramShareButton url={url}>
-        <TelegramIcon
-          size={48}
-          round={true}
-          title="ShareMe - Next Gen Social Media Website"
-        />
+        <TelegramIcon size={48} round={true} title={title} />
       </TelegramShareButton>
+
+      <TumblrShareButton url={url}>
+        <TumblrIcon size={48} round={true} title={title} />
+      </TumblrShareButton>
     </div>
   );
 };

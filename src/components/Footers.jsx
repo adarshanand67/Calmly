@@ -6,12 +6,13 @@ import SocialMediaButtons from "./SocialMediaButtons";
 const Footers = () => {
   return (
     <>
-      <div className="w-full mt-2">
+      <div className="mt-2 w-full">
         {/* <Footer.Divider /> */}
-        <h1 className="text-center text-2xl mb-2">
-          Help us spread the word!
-        </h1>
-        <SocialMediaButtons url="https://calmly-mental-health.vercel.app/" />
+        <h1 className="mb-2 text-center text-2xl">Help us spread the word!</h1>
+        <SocialMediaButtons
+          url="https://calmly-mental-health.vercel.app/"
+          text="Calmly™ - The All in One App for your Mental Health needs"
+        />
         <div className="flex w-full justify-center pb-2">
           <hr />
 

@@ -42,7 +42,6 @@ const Home = () => {
           <img src={mockups} alt="mockups" className="w-1/2" />
         </div>
       </div>
-      {/* Social Media */}
       <h2 className="mx-auto my-5 w-2/3 text-center text-5xl font-bold text-black">
         Available Healthcare Services
       </h2>
