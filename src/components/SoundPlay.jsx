@@ -1,6 +1,4 @@
-import { useState } from "react";
-import Sound from "react-sound";
-import intro from "../sound/intro.mp3";
+import { useEffect, useState } from "react";
 
 const converted = {
   ".message": {
@@ -23,22 +21,32 @@ const converted = {
 };
 
 const SoundPlay = () => {
-  const [play, setPlay] = useState(true);
+  const [playing, setPlaying] = useState(false);
+  useEffect(() => {
+    function playSound() {
+      setPlaying(true);
+      const synth = window.speechSynthesis;
+      const utterance = new SpeechSynthesisUtterance("Play a song and Relax!");
+      utterance.rate = 1.5;
+      utterance.volume = 1.5;
+      synth.speak(utterance);
 
-  setTimeout(() => {
-    setPlay(false);
-  }, 3000);
+      setTimeout(() => {
+        setPlaying(false);
+      }, 5000);
+    }
+    playSound();
+  }, []);
 
   return (
     <>
-
-      {play && (
-        <>
+      <>
+        {playing && (
           <div style={converted[".message"]}>
-            <p className="text-black w-1/2 m-0">Play a song and Relax!</p>
+            <p className="m-0 w-1/2 text-black">Play a song and Relax!</p>
           </div>
-        </>
-      )}
+        )}
+      </>
     </>
   );
 };
