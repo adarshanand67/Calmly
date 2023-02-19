@@ -1,5 +1,4 @@
 ![logo (1)](public/assets/favicon.png)
-
 <h1> Calmly </h1>
 
 [![GitHub contributors](https://img.shields.io/github/contributors/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/contributors)
@@ -13,6 +12,18 @@
 ## Storyline and Thought Process
 
 Calmly is a mental health application designed to help individuals manage their mental health and well-being. The app provides tools and resources to help users maintain a healthy mindset and improve their overall well-being.
+
+## ScreenShots
+![chrome_6RTyfbMxGz](https://user-images.githubusercontent.com/73928744/218274206-7a599c70-a7af-4c31-8bd7-eaa5c5adc9d8.png)
+![chrome_EufxHFwJfT_magic](https://user-images.githubusercontent.com/73928744/218274211-19563d5a-cb4a-4d8b-b6af-9a82b460f75e.png)
+![chrome_Um8lbs6Ph0](https://user-images.githubusercontent.com/73928744/218274214-1c5dded2-2cd2-48fd-90c9-18aae6cac37a.png)
+![color](https://user-images.githubusercontent.com/73928744/218274218-061f5a0d-a7ba-4587-b4e8-91535ee15dc6.png)
+![mockups](https://user-images.githubusercontent.com/73928744/218274222-c376d7e0-4379-4678-b170-b48d7c05cd46.png)
+![title](https://user-images.githubusercontent.com/73928744/218274224-b32d53cb-bda9-455a-9066-301aae312906.png)
+![chrome_YdVoPWISLz](https://user-images.githubusercontent.com/73928744/218274243-3d9ed3fd-a836-43b9-9be6-abbbe02fe0a5.png)
+![chrome_eP0TvbzZNK](https://user-images.githubusercontent.com/73928744/218274262-c003c4e4-0bbe-49a2-bfb3-3daecbb1ae41.png)
+![chrome_GJQn43Xexc](https://user-images.githubusercontent.com/73928744/218274283-c6bcd784-cb09-4205-9c23-a9406ab84e0f.png)
+![chrome_xzVi3emFCF](https://user-images.githubusercontent.com/73928744/218274288-ea49aa14-1328-48b0-bd8f-383e938f6a72.png)
 
 <!--
 ## Screenshots
