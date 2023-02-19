@@ -7,7 +7,7 @@ import title from "../../public/assets/title.png";
 import chakra from "../animation/chakra.json";
 import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
-import thoughts from "../animation/thoughts.json";
+import thoughts from "../animation/Thoughts.json";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
 import HomeSection from "../components/HomeSection";
