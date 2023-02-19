@@ -12,8 +12,8 @@ import thoughts from "../animation/thoughts.json";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
 import HomeSection from "../components/HomeSection";
-import Quote from "../pages/Quote";
 import Testimonials from "../components/Testimonials";
+import Quote from "../pages/Quote";
 
 const Home = () => {
   return (
@@ -22,20 +22,24 @@ const Home = () => {
       <div className="my-5 grid sm:grid-cols-1 lg:grid-cols-2">
         <div className="flex flex-col items-center justify-center ">
           <div className="flex flex-col items-center justify-center">
-            <img src={title} alt="title" className="w-1/2" />
-            <Fade left>
-              <p className="m-5 mb-10 text-center text-4xl">
-                The All in One App for your <br />{" "}
-                <span className="text-blue-500">Mental Health </span>
-                needs <br />
-              </p>
-            </Fade>
+            <img
+              src={title}
+              alt="title"
+              className="w-1/2"
+              data-aos="fade-right"
+            />
+            <p className="m-5 mb-10 text-center text-4xl">
+              The All in One App for your <br />{" "}
+              <span className="text-blue-500">Mental Health </span>
+              needs <br />
+            </p>
           </div>
         </div>
-        <div className="mt-5 flex flex-col items-center justify-center ">
-          <Fade right>
-            <img src={mockups} alt="mockups" className="w-1/2" />
-          </Fade>
+        <div
+          className="mt-5 flex flex-col items-center justify-center "
+          data-aos="fade-left"
+        >
+          <img src={mockups} alt="mockups" className="w-1/2" />
         </div>
       </div>
       {/* <Quotes /> */}
@@ -77,7 +81,6 @@ const Home = () => {
         link="/Quote"
         buttonText="Get Inspired"
       />
-
 
       <Testimonials />
       <FAQ />
