@@ -1,6 +1,5 @@
 import Lottie from "lottie-react";
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 const ChakraCard = (props) => {
   const { animationData, title, location, meaning, color, description } = props;

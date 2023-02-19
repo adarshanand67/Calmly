@@ -1,7 +1,6 @@
 import { Icon } from "@iconify/react";
 import Lottie from "lottie-react";
 import React from "react";
-import Fade from "react-reveal/Fade";
 import { Link } from "react-router-dom";
 import mockups from "../../public/assets/mockups.png";
 import title from "../../public/assets/title.png";

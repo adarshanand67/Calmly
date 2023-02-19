@@ -1,7 +1,6 @@
 import Lottie from "lottie-react";
 import PropTypes from "prop-types";
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 const YogaCard = (props) => {
   const { animationData, title, subtitle, description, note } = props;
