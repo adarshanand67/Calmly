@@ -8,10 +8,11 @@ import title from "../../public/assets/title.png";
 import chakra from "../animation/chakra.json";
 import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
+import thoughts from "../animation/thoughts.json";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
 import HomeSection from "../components/HomeSection";
-import Quotes from "../components/Quotes";
+import Quote from "../components/Quote";
 import Testimonials from "../components/Testimonials";
 
 const Home = () => {
@@ -23,7 +24,7 @@ const Home = () => {
           <div className="flex flex-col items-center justify-center">
             <img src={title} alt="title" className="w-1/2" />
             <Fade left>
-              <p className="m-5 text-center text-4xl">
+              <p className="m-5 mb-10 text-center text-4xl">
                 The All in One App for your <br />{" "}
                 <span className="text-blue-500">Mental Health </span>
                 needs <br />
@@ -38,7 +39,10 @@ const Home = () => {
         </div>
       </div>
       {/* <Quotes /> */}
-      <h2 className="w-2/3 mx-auto my-5 text-center text-5xl font-bold text-black">
+      {/* <div className="w-5/6 mx-auto mt-10">
+        <Quote />
+      </div> */}
+      <h2 className="mx-auto my-5 w-2/3 text-center text-5xl font-bold text-black">
         Available Healthcare Services
       </h2>
       <h5 className="text-center text-xl text-slate-500">
@@ -65,6 +69,15 @@ const Home = () => {
         link="/Yoga"
         buttonText="Learn about Yoga"
       />
+
+      <HomeSection
+        animationData={thoughts}
+        title="Quotes"
+        description="Quotes are a great way to get inspired and motivated. Here are some of the best quotes from the world's most successful people."
+        link="/Quote"
+        buttonText="Get Inspired"
+      />
+
 
       <Testimonials />
       <FAQ />

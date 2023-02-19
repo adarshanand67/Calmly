@@ -9,19 +9,19 @@ const HomeSection = (props) => {
     // <div className="m-5 sm:grid-cols-1 lg:grid-cols-2 justify-around">
     <div className="m-4 mr-10 grid gap-0 sm:grid-cols-1 lg:grid-cols-2">
       <Fade left>
-        <div>
+        <div className="mx-auto flex w-2/3 justify-center">
           <Lottie animationData={animationData} />
         </div>
       </Fade>
       <div className="mx-auto flex w-2/3 flex-col justify-center">
         <Fade right>
-          <span className="my-2 inline text-5xl font-bold text-black">
+          <span className="my-2 inline-block text-5xl font-bold text-black">
             {title}{" "}
           </span>
-          <span className="text-xl text-slate-500">{description}</span>
-          <div className="mt-5 text-center">
+          <span className="inline text-xl text-slate-500">{description}</span>
+          <div className="mt-5">
             <Link to={link}>
-              <button className="rounded bg-blue-500 p-5 font-bold text-white hover:bg-blue-700">
+              <button className="w-full rounded bg-blue-500 p-5 font-bold text-white hover:bg-blue-700">
                 {buttonText}
               </button>
             </Link>

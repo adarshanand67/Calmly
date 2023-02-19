@@ -2,6 +2,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Alert from "./components/Alert";
+import Quote from "./components/Quote";
 import About from "./pages/About";
 import Chakras from "./pages/Chakras";
 import Donate from "./pages/Donate";
@@ -16,6 +17,7 @@ const Routing = () => (
     <Route path="/Chakras" element={<Chakras />} />
     <Route path="/Yoga" element={<Yoga />} />
     <Route path="/Donate" element={<Donate />} />
+    <Route path="/Quote" element={<Quote />} />
     <Route path="/" element={<Home />} />
   </Routes>
 );
