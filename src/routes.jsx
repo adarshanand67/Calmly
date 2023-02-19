@@ -9,6 +9,7 @@ import Donate from "./pages/Donate";
 import Home from "./pages/Home";
 import Meditation from "./pages/Meditation";
 import Yoga from "./pages/Yoga";
+import Issues from "./pages/Issues";
 const Routing = () => (
   <Routes>
     <Route path="/Meditation" element={<Meditation />} />
@@ -18,6 +19,7 @@ const Routing = () => (
     <Route path="/Yoga" element={<Yoga />} />
     <Route path="/Donate" element={<Donate />} />
     <Route path="/Quote" element={<Quote />} />
+    <Route path="/Issues" element={<Issues />} />
     <Route path="/" element={<Home />} />
   </Routes>
 );

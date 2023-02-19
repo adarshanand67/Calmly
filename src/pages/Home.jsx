@@ -11,6 +11,7 @@ import thoughts from "../animation/Thoughts.json";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
 import HomeSection from "../components/HomeSection";
+import SocialMediaButtons from "../components/SocialMediaButtons";
 import Testimonials from "../components/Testimonials";
 import Quote from "../pages/Quote";
 
@@ -41,10 +42,7 @@ const Home = () => {
           <img src={mockups} alt="mockups" className="w-1/2" />
         </div>
       </div>
-      {/* <Quotes /> */}
-      {/* <div className="w-5/6 mx-auto mt-10">
-        <Quote />
-      </div> */}
+      {/* Social Media */}
       <h2 className="mx-auto my-5 w-2/3 text-center text-5xl font-bold text-black">
         Available Healthcare Services
       </h2>

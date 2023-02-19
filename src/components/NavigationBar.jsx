@@ -12,6 +12,7 @@ const NavigationBar = () => {
     "Yoga",
     "Quote",
     "About",
+    "Issues",
   ];
 
   return (
