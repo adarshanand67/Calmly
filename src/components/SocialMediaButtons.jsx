@@ -26,9 +26,6 @@ const SocialMediaButtons = ({ url, title }) => {
   return (
     // Send all buttons to bottom right
     <div className="mt2 mb-5 flex items-end justify-center gap-3">
-      <EmailShareButton url={url}>
-        <EmailIcon size={48} round={true} title={title} />
-      </EmailShareButton>
 
       <FacebookShareButton url={url}>
         <FacebookIcon size={48} round={true} title={title} />
@@ -54,9 +51,6 @@ const SocialMediaButtons = ({ url, title }) => {
         <TelegramIcon size={48} round={true} title={title} />
       </TelegramShareButton>
 
-      <TumblrShareButton url={url}>
-        <TumblrIcon size={48} round={true} title={title} />
-      </TumblrShareButton>
     </div>
   );
 };
