@@ -2,7 +2,7 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Alert from "./components/Alert";
-import Quote from "./components/Quote";
+import Quote from "./pages/Quote";
 import About from "./pages/About";
 import Chakras from "./pages/Chakras";
 import Donate from "./pages/Donate";

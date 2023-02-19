@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 // import "react-toastify/dist/ReactToastify.css";
 import "../../node_modules/react-toastify/dist/ReactToastify.css";
-import Spinners from "./Spinners";
+import Spinners from "../components/Spinners";
 
 import "../styles/Quote.css";
 

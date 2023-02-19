@@ -32,13 +32,13 @@ const NavigationBar = () => {
         </Navbar.Brand>
         {/* Navbar */}
         <Navbar.Toggle />
-        <Navbar.Collapse>
+        <Navbar.Collapse className="m-0">
           {headersData.map((item) => {
             return (
               <>
                 <Link to={`/${item}`} key={uuidv4()}>
                   <button
-                    className="m-0 inline-block rounded py-3 px-3 text-xl font-semibold text-slate-600 hover:cursor-pointer hover:bg-blue-600 hover:text-gray-100"
+                    className="rounded py-3 px-2 text-xl font-semibold text-slate-600 hover:cursor-pointer hover:bg-blue-600 hover:text-gray-100"
                     key={uuidv4()}
                   >
                     {item}

@@ -12,7 +12,7 @@ import thoughts from "../animation/thoughts.json";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
 import HomeSection from "../components/HomeSection";
-import Quote from "../components/Quote";
+import Quote from "../pages/Quote";
 import Testimonials from "../components/Testimonials";
 
 const Home = () => {
