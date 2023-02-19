@@ -56,7 +56,7 @@ const Testimonials = () => {
               </p>
             </div>
             <div className="-mx-3 items-start md:flex">
-              <div className="grid grid-cols-3 gap-4 px-3">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-3">
                 {data.map((item) => (
                   <TestimonialCard
                     id={item.id}

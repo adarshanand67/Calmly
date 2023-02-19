@@ -13,6 +13,7 @@ const NavigationBar = () => {
     "Quote",
     "About",
     "Issues",
+    "Chat",
   ];
 
   return (
