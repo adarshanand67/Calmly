@@ -2,7 +2,7 @@ import React from "react";
 
 const FAQCard = (props) => {
   const { id, title, description } = props;
-  console.log(id);
+  // console.log(id);
   // If even index, then left animation
   // If odd index, then right animation
   return (
