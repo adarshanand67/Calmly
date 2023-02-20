@@ -88,7 +88,6 @@ const ContactForm = ({ setShowModal }) => {
           >
             Submit
           </button>
-
         </div>
       </form>
       <ToastContainer />

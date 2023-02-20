@@ -3,7 +3,7 @@ import React from "react";
 
 const Chat = () => {
   return (
-    <div className="container w-5/6 bg-pink-200 mx-auto mt-10">
+    <div className="container mx-auto mt-10 w-5/6 bg-pink-200">
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio placeat,
     </div>
   );

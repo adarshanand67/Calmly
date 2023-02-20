@@ -25,7 +25,6 @@ const Home = () => {
   const [showForm, setShowForm] = React.useState(false);
   const [showModal, setShowModal] = React.useState(false);
 
-
   const handleOpen = () => {
     setShowModal(true);
     setShowForm(true);
