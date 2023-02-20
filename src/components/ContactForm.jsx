@@ -1,3 +1,4 @@
+import emailjs from "emailjs-com";
 import React, { useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 
@@ -5,6 +6,26 @@ const ContactForm = ({ setShowModal }) => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
+
+    emailjs
+      .sendForm(
+        "service_h2k5q27", // Service ID for the email provider
+        "template_vqlawut", // Email template ID
+        e.target, // Form element to send
+        "lgGfkiUnJICbaIc-Q" // User ID for EmailJS account
+      )
+      .then(
+        (result) => {
+          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -15,6 +36,8 @@ const ContactForm = ({ setShowModal }) => {
     setTimeout(() => {
       setShowModal(false);
     }, 3000);
+
+    sendEmail(e);
   };
 
   return (
