@@ -4,10 +4,11 @@
 
 # TODO
 
-- Commonly related mental health issues
-- Form section
+- Commonly related mental health disorders
+<!-- - Form section -->
 - emergency resources
 - Select your symptoms to get your stress score
+<!-- - Contact us -->
 
 [![GitHub contributors](https://img.shields.io/github/contributors/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/issues)

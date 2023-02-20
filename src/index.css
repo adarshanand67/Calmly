@@ -1,3 +1,50 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  font-family: "Fuzzy Bubbles", cursive;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+/* Scrollbar customization */
+
+::-webkit-scrollbar {
+  width: 0.75rem;
+  border-radius: 150px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+  border-radius: 150px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5372F0;
+  border-radius: 150px;
+}
+
+/* Selection Customization */
+
+::-moz-selection {
+  background: #cce4ff;
+  color: black;
+}
+::-webkit-selection {
+  background: #cce4ff;
+  color: black;
+}
+::selection {
+  background: #cce4ff;
+  color: black;
+}
