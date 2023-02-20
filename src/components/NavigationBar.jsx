@@ -16,12 +16,7 @@ const NavigationBar = () => {
     // "Issues",
     "Chat",
   ];
-  const services = [
-    "Meditation",
-    "Chakras",
-    "Yoga",
-    "Quote",
-  ];
+  const services = ["Meditation", "Chakras", "Yoga", "Quote"];
 
   return (
     <>
@@ -29,9 +24,6 @@ const NavigationBar = () => {
         fluid={true}
         rounded={true}
         style={{ backgroundColor: "#CCE4FF" }}
-        id="navbar-sticky"
-        sticky="top"
-        sticky={true}
       >
         <Navbar.Brand href="/">
           <img src={favicon} className="mr-3 h-6 sm:h-9" alt="Calmly Logo" />

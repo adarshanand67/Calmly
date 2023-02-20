@@ -7,29 +7,13 @@ const ContactForm = ({ setShowModal }) => {
   const [email, setEmail] = useState("");
   const [query, setQuery] = useState("");
 
+  const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const USER_ID = import.meta.env.VITE_USER_ID;
+
   const sendEmail = (e) => {
-    e.preventDefault(); //This is important, i'm not sure why, but the email won't send without it
-
-    emailjs
-      .sendForm(
-        "service_h2k5q27", // Service ID for the email provider
-        "template_vqlawut", // Email template ID
-        e.target, // Form element to send
-        "lgGfkiUnJICbaIc-Q" // User ID for EmailJS account
-      )
-      .then(
-        (result) => {
-          window.location.reload(); //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
-
-  const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log("Name: ", name, "Email: ", email, "Query: ", query);
+
     toast.success(
       "Your query has been submitted successfully!  You will be contacted soon."
     );
@@ -37,12 +21,28 @@ const ContactForm = ({ setShowModal }) => {
       setShowModal(false);
     }, 3000);
 
-    sendEmail(e);
+    const templateParams = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      query: e.target.query.value,
+    };
+
+    // console.log(templateParams);
+    // console.log(e.target);
+
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, templateParams, USER_ID).then(
+      (result) => {
+        console.log(result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
   };
 
   return (
     <div className="mx-auto my-4 max-w-sm rounded-lg bg-white p-6 shadow-md">
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={sendEmail}>
         <div className="mb-4">
           <label className="mb-2 block font-bold text-gray-700" htmlFor="name">
             Name

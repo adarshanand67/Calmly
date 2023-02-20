@@ -1,8 +1,6 @@
 import Aos from "aos";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
-import "./App.css";
-import BMICalculator from "./components/BMICalculator";
 import Footers from "./components/Footers";
 import { default as NavigationBar } from "./components/NavigationBar";
 import Routing from "./routes";

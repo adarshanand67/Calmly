@@ -1,6 +1,6 @@
 import React from "react";
+import { v4 as uuidv4 } from "uuid";
 import TestimonialCard from "./TestimonialCard";
-
 const data = [
   {
     id: 1,
@@ -56,12 +56,13 @@ const Testimonials = () => {
               </p>
             </div>
             <div className="-mx-3 items-start md:flex">
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 px-3">
+              <div className="grid gap-4 px-3 md:grid-cols-2 lg:grid-cols-3">
                 {data.map((item) => (
                   <TestimonialCard
                     id={item.id}
                     name={item.name}
                     description={item.description}
+                    key={uuidv4()}
                   />
                 ))}
               </div>

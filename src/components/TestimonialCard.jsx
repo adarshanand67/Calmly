@@ -1,5 +1,5 @@
 import React from "react";
-
+// uuid
 const TestimonialCard = (props) => {
   const { id, name, description } = props;
   const image = `https://i.pravatar.cc/100?img=${id}`;
