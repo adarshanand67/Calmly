@@ -24,6 +24,7 @@
     "react-countup": "^6.4.1",
     "react-dom": "^18.2.0",
     "react-icons": "^4.7.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.8.1",
     "react-share": "^4.4.1",
     "react-toastify": "^9.1.1",

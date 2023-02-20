@@ -3,10 +3,11 @@
 <h1> Calmly </h1>
 
 # TODO
+
 - Commonly related mental health issues
 - Form section
 - emergency resources
-- 
+- Select your symptoms to get your stress score
 
 [![GitHub contributors](https://img.shields.io/github/contributors/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/issues)

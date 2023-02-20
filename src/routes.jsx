@@ -11,9 +11,12 @@ import Meditation from "./pages/Meditation";
 import Yoga from "./pages/Yoga";
 import Issues from "./pages/Issues";
 import Chat from "./pages/Chat";
+import Services from "./pages/Services";
+
 const Routing = () => (
   <Routes>
     <Route path="/Meditation" element={<Meditation />} />
+    <Route path="/Services" element={<Services />} />
     <Route path="/Home" element={<Home />} />
     <Route path="/About" element={<About />} />
     <Route path="/Chakras" element={<Chakras />} />

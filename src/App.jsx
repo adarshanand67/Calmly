@@ -6,7 +6,6 @@ import BMICalculator from "./components/BMICalculator";
 import Footers from "./components/Footers";
 import { default as NavigationBar } from "./components/NavigationBar";
 import Routing from "./routes";
-// import "aos/dist/aos.css";
 import "../node_modules/aos/dist/aos.css";
 
 function App() {
