@@ -4,6 +4,8 @@ import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
 import thoughts from "../animation/Thoughts.json";
 import HomeSection from "../components/HomeSection";
+import Crown from "../animation/crown.json";
+import heart from "../animation/heart.json";
 
 const Services = () => {
   return (
@@ -42,6 +44,15 @@ const Services = () => {
         description="Quotes are a great way to get inspired and motivated. Here are some of the best quotes from the world's most successful people."
         link="/Quote"
         buttonText="Get Inspired"
+      />
+
+      {/* Donate */}
+      <HomeSection
+        animationData={heart}
+        title="Donate"
+        description="We are a non-profit organization and we rely on donations to keep our services free. If you would like to donate, please click the button below."
+        link="/Donate"
+        buttonText="Donate"
       />
     </>
   );

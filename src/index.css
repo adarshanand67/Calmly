@@ -10,10 +10,10 @@ body {
 
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
-}
+}x
 
 * {
-  font-family: "Fuzzy Bubbles", cursive;
+  /* font-family: "Fuzzy Bubbles", cursive; */
   /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
 }
 
