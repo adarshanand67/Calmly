@@ -1,11 +1,10 @@
 import React from "react";
 import chakra from "../animation/chakra.json";
+import heart from "../animation/heart.json";
 import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
 import thoughts from "../animation/Thoughts.json";
 import HomeSection from "../components/HomeSection";
-import Crown from "../animation/crown.json";
-import heart from "../animation/heart.json";
 
 const Services = () => {
   return (
