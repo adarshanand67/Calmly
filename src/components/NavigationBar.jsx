@@ -38,18 +38,33 @@ const NavigationBar = () => {
         <Navbar.Toggle />
         <Navbar.Collapse className="m-0">
           {headersData.map((item) => {
-            return (
-              <>
-                <Link to={`/${item}`} key={uuidv4()}>
-                  <button
-                    className="rounded py-3 px-2 text-xl font-semibold text-slate-600 hover:cursor-pointer hover:bg-blue-600 hover:text-gray-100"
-                    key={uuidv4()}
-                  >
-                    {item}
-                  </button>
-                </Link>
-              </>
-            );
+            if (item !== "Home") {
+              return (
+                <>
+                  <Link to={`/${item}`} key={uuidv4()}>
+                    <button
+                      className="rounded py-3 px-2 text-xl font-semibold text-slate-600 hover:cursor-pointer hover:bg-blue-600 hover:text-gray-100"
+                      key={uuidv4()}
+                    >
+                      {item}
+                    </button>
+                  </Link>
+                </>
+              );
+            } else {
+              return (
+                <>
+                  <Link to={`/`} key={uuidv4()}>
+                    <button
+                      className="rounded py-3 px-2 text-xl font-semibold text-slate-600 hover:cursor-pointer hover:bg-blue-600 hover:text-gray-100"
+                      key={uuidv4()}
+                    >
+                      {item}
+                    </button>
+                  </Link>
+                </>
+              );
+            }
           })}
         </Navbar.Collapse>
       </Navbar>
