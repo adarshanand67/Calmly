@@ -20,7 +20,6 @@ import SocialMediaButtons from "../components/SocialMediaButtons";
 import Testimonials from "../components/Testimonials";
 import Quote from "../pages/Quote";
 import ServicesButton from "../components/ServicesButton";
-
 Modal.setAppElement("#root");
 
 const Home = () => {
@@ -58,10 +57,10 @@ const Home = () => {
           <img src={mockups} alt="mockups" className="w-1/2" />
         </div>
       </div>
+      <CountUps />
 
       <Testimonials />
       <FAQ />
-      <CountUps />
 
       {/* Forms */}
       {showForm && (
@@ -79,7 +78,7 @@ const Home = () => {
         onClick={handleOpen}
       />
 
-     <ServicesButton/>
+      <ServicesButton />
     </>
   );
 };

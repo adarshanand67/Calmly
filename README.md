@@ -3,12 +3,14 @@
 <h1> Calmly </h1>
 
 # TODO
+
 cpp
-- Commonly related mental health disorders
+
+- Commonly related mental health disorders (Cards)
 - emergency resources
 - Select your symptoms to get your stress score
 - Blogs section to read about mental health (MongoDB)
-- Chat application anonymously
+- Chat application using threads and storing the data
 - Integrate something basic like GitaGPT
 - Countup component
 - Mental health trivia
@@ -37,37 +39,6 @@ Calmly is a mental health application designed to help individuals manage their 
 ![chrome_eP0TvbzZNK](https://user-images.githubusercontent.com/73928744/218274262-c003c4e4-0bbe-49a2-bfb3-3daecbb1ae41.png)
 ![chrome_GJQn43Xexc](https://user-images.githubusercontent.com/73928744/218274283-c6bcd784-cb09-4205-9c23-a9406ab84e0f.png)
 ![chrome_xzVi3emFCF](https://user-images.githubusercontent.com/73928744/218274288-ea49aa14-1328-48b0-bd8f-383e938f6a72.png)
-
-<!--
-## Screenshots
-
-HomePage:
-| ![HomePage](https://user-images.githubusercontent.com/79798301/212641749-a9a810aa-0c60-4d32-9884-b9c630feb0a4.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-Company Data and Charts:
-| ![Company_Data](https://user-images.githubusercontent.com/79798301/212642315-4a98426d-931b-4425-8284-1e2c63f63417.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-Stock-Exchange Data:
-| ![image](https://user-images.githubusercontent.com/79798301/212642658-80249476-e35c-4a65-bc17-e602a9122a84.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-Technical Analysis:
-| ![image](https://user-images.githubusercontent.com/79798301/212643177-63061d26-d898-46d0-9483-6ab0482fb9e1.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-About Us:
-| ![image](https://user-images.githubusercontent.com/79798301/212643758-e27b7b67-d4dc-4f42-b0e1-e1718696d13e.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-MongoDB Data:
-| ![image](https://user-images.githubusercontent.com/79798301/212653593-63d6f04e-8b99-4510-8566-64a1f9676505.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: |
-
-Postman Requests:
-| ![image](https://user-images.githubusercontent.com/79798301/212653612-2b6c59b6-ad6f-4db6-96c8-c5790ce58d61.png) |
-| :----------------------------------------------------------------------------------------------------------------------------------: | -->
 
 ## Tech Stack
 
