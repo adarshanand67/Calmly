@@ -12,7 +12,6 @@ cpp
 - Blogs section to read about mental health (MongoDB)
 - Chat application using threads and storing the data
 - Integrate something basic like GitaGPT
-- Countup component
 - Mental health trivia
 
 [![GitHub contributors](https://img.shields.io/github/contributors/adarshanand67/Calmly)](https://github.com/adarshanand67/Calmly/contributors)
@@ -58,13 +57,13 @@ Calmly is a mental health application designed to help individuals manage their 
 
 - `Lottie React`: A library for using animations in React applications
 
-- `React Compound Timer`: A library for building timers in React
+<!-- - `React Compound Timer`: A library for building timers in React -->
 
 - `React Countdown`: A library for countdown timers in React
 
 - `React Countup`: A library for countup timers in React
 
-- `React DOM`: A library for working with the DOM in React
+<!-- - `React DOM`: A library for working with the DOM in React -->
 
 - `React Icons`: A library of icons for React
 
@@ -140,3 +139,9 @@ Please make sure to update tests as appropriate.
 - [React Docs](https://reactjs.org/docs/getting-started.html)
 
 - [Tailwind Docs](https://tailwindcss.com/docs)
+
+- [DaisyUI Docs](https://daisyui.com/docs)
+
+- [FlowBite Docs](https://flowbite.com/docs)
+
+- [FlowBite React Docs](https://flowbite-react.com/docs)

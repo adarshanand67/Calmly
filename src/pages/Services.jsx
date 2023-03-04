@@ -1,10 +1,13 @@
 import React from "react";
+import thoughts from "../animation/Thoughts.json";
 import chakra from "../animation/chakra.json";
 import heart from "../animation/heart.json";
 import heromedi from "../animation/heromedi.json";
+import solar from "../animation/solar.json";
 import sukh from "../animation/sukh.json";
-import thoughts from "../animation/Thoughts.json";
 import HomeSection from "../components/HomeSection";
+import birds from "../animation/birds.json";
+import bmi from "../animation/bmi.json";
 
 const Services = () => {
   return (
@@ -43,6 +46,15 @@ const Services = () => {
         description="Quotes are a great way to get inspired and motivated. Here are some of the best quotes from the world's most successful people."
         link="/Quote"
         buttonText="Get Inspired"
+      />
+
+      {/* Disorders */}
+      <HomeSection
+        animationData={bmi}
+        title="Disorders"
+        description="Mental disorders are health conditions that affect your mood, thinking and behavior. Examples of mental disorders include depression, anxiety disorders, schizophrenia, eating disorders and addictive behaviors."
+        link="/Disorders"
+        buttonText="Learn about Disorders"
       />
 
       {/* Donate */}

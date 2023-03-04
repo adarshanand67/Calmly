@@ -12,7 +12,7 @@ import Yoga from "./pages/Yoga";
 import Issues from "./pages/Issues";
 import Chat from "./pages/Chat";
 import Services from "./pages/Services";
-
+import Disorders from "./pages/Disorders";
 const Routing = () => (
   <Routes>
     <Route path="/Meditation" element={<Meditation />} />
@@ -22,6 +22,7 @@ const Routing = () => (
     <Route path="/Chakras" element={<Chakras />} />
     <Route path="/Yoga" element={<Yoga />} />
     <Route path="/Donate" element={<Donate />} />
+    <Route path="/Disorders" element={<Disorders />} />
     <Route path="/Quote" element={<Quote />} />
     <Route path="/Issues" element={<Issues />} />
     <Route path="/Chat" element={<Chat />} />
