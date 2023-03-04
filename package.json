@@ -30,6 +30,9 @@
     "react-router-dom": "^6.8.1",
     "react-share": "^4.4.1",
     "react-toastify": "^9.1.1",
+    "stream-chat": "^8.4.1",
+    "stream-chat-react": "^10.7.0",
+    "universal-cookie": "^4.0.4",
     "uuid": "^9.0.0"
   },
   "devDependencies": {

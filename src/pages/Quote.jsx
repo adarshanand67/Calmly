@@ -6,6 +6,7 @@ import "../../node_modules/react-toastify/dist/ReactToastify.css";
 import Spinners from "../components/Spinners";
 
 import "../styles/Quote.css";
+import ServicesButton from "../components/ServicesButton";
 
 const Quote = () => {
   const [data, setData] = useState([]);
@@ -52,51 +53,56 @@ const Quote = () => {
   if (loading) return <Spinners />;
 
   return (
-    <div className="quote-box">
-      <div className="wrapper">
-        <header>"Quote of the Day"</header>
-        <div className="content">
-          <div className="quote-area">
-            <i className="fas fa-quote-left" />
-            <p className="quote">{randomData.text}</p>
-            <i className="fas fa-quote-right" />
-          </div>
-          <div className="author">
-            <span>__</span>
-            <span className="name">{randomData.author}</span>
-          </div>
-        </div>
-        <div className="buttons">
-          <div className="buttons">
-            <div className="features">
-              <ul>
-                <li className="sound" onClick={playSound}>
-                  <i className="fas fa-volume-up" />
-                </li>
-                <li className="copy" onClick={copyQuote}>
-                  <i className="fas fa-copy" />
-                </li>
-                <li className="twitter" onClick={tweetQuote}>
-                  <i className="fab fa-twitter" />
-                </li>
-              </ul>
-              <button
-                onClick={() => {
-                  setRandomData(data[Math.floor(Math.random() * data.length)]);
-                  toast.info("Generating new quote", {
-                    position: "top-center",
-                    autoClose: 2000,
-                  });
-                }}
-              >
-                Generate Random Quote
-              </button>
+    <>
+      <div className="quote-box">
+        <div className="wrapper">
+          <header>"Quote of the Day"</header>
+          <div className="content">
+            <div className="quote-area">
+              <i className="fas fa-quote-left" />
+              <p className="quote">{randomData.text}</p>
+              <i className="fas fa-quote-right" />
+            </div>
+            <div className="author">
+              <span>__</span>
+              <span className="name">{randomData.author}</span>
             </div>
           </div>
-          <ToastContainer />
+          <div className="buttons">
+            <div className="buttons">
+              <div className="features">
+                <ul>
+                  <li className="sound" onClick={playSound}>
+                    <i className="fas fa-volume-up" />
+                  </li>
+                  <li className="copy" onClick={copyQuote}>
+                    <i className="fas fa-copy" />
+                  </li>
+                  <li className="twitter" onClick={tweetQuote}>
+                    <i className="fab fa-twitter" />
+                  </li>
+                </ul>
+                <button
+                  onClick={() => {
+                    setRandomData(
+                      data[Math.floor(Math.random() * data.length)]
+                    );
+                    toast.info("Generating new quote", {
+                      position: "top-center",
+                      autoClose: 2000,
+                    });
+                  }}
+                >
+                  Generate Random Quote
+                </button>
+              </div>
+            </div>
+            <ToastContainer />
+          </div>
         </div>
       </div>
-    </div>
+      <ServicesButton />
+    </>
   );
 };
 

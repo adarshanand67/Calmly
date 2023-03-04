@@ -5,6 +5,7 @@ import halasana from "../animation/halasana.json";
 import sukh from "../animation/sukh.json";
 import vrikshasana from "../animation/vrikshasana.json";
 import YogaCard from "../components/YogaCard";
+import ServicesButton from "../components/ServicesButton";
 
 const Yoga = () => {
   return (
@@ -42,6 +43,8 @@ const Yoga = () => {
         subtitle="Vrikshasana is primarily a balancing posture, it aids in improving balance – both physical and emotional."
         description="Start at the ground and feel where weight is concentrated on your standing foot. Now move up your standing leg and feel the muscles engaged with a micro-bend in your knee.When you get it right and can balance, you'll see how your body should be aligned to stay strong. If reaching your toe is too challenging, you can still get the benefits of this pose by keeping your leg bent and holding on to your knee.This posture aims to keep your body and mind from wandering and stay balanced."
       />
+
+      <ServicesButton />
     </div>
   );
 };

@@ -1,15 +1,16 @@
 import { Icon } from "@iconify/react";
 import Lottie from "lottie-react";
 import React from "react";
+import { AiOutlineArrowRight } from "react-icons/ai";
 import { RiCustomerService2Fill } from "react-icons/ri";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import mockups from "../../public/assets/mockups.png";
 import title from "../../public/assets/title.png";
+import thoughts from "../animation/Thoughts.json";
 import chakra from "../animation/chakra.json";
 import heromedi from "../animation/heromedi.json";
 import sukh from "../animation/sukh.json";
-import thoughts from "../animation/Thoughts.json";
 import ContactForm from "../components/ContactForm";
 import CountUps from "../components/CountUps";
 import FAQ from "../components/FAQ";
@@ -18,6 +19,7 @@ import HomeSection from "../components/HomeSection";
 import SocialMediaButtons from "../components/SocialMediaButtons";
 import Testimonials from "../components/Testimonials";
 import Quote from "../pages/Quote";
+import ServicesButton from "../components/ServicesButton";
 
 Modal.setAppElement("#root");
 
@@ -76,6 +78,8 @@ const Home = () => {
         icon={<RiCustomerService2Fill size={30} />}
         onClick={handleOpen}
       />
+
+     <ServicesButton/>
     </>
   );
 };

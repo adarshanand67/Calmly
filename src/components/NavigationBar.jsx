@@ -14,7 +14,7 @@ const NavigationBar = () => {
     "Services",
     "About",
     // "Issues",
-    "Chat",
+    // "Chat",
   ];
   const services = ["Meditation", "Chakras", "Yoga", "Quote"];
 

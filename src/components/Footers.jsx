@@ -2,6 +2,7 @@ import { Footer } from "flowbite-react";
 import React, { useState } from "react";
 import { BsFacebook, BsGithub, BsInstagram, BsTwitter } from "react-icons/bs";
 import SocialMediaButtons from "./SocialMediaButtons";
+import ServicesButton from "./ServicesButton";
 
 const Footers = () => {
   return (

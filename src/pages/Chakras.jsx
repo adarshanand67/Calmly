@@ -9,6 +9,7 @@ import thirdeye from "../animation/Thirdeye.json";
 import throat from "../animation/Throat.json";
 import chacha from "../../public/assets/bg.jpg";
 import ChakraCard from "../components/ChakraCard";
+import ServicesButton from "../components/ServicesButton";
 // import "../styles/Chakras.css";
 
 const Chakras = () => {
@@ -98,6 +99,7 @@ const Chakras = () => {
               commonly pictured as concentric rings of flower petals, which
               represent the divine lotus."
         />
+        <ServicesButton/>
       </div>
     </>
   );
